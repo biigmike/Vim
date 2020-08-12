@@ -1,0 +1,71 @@
+Motion Befehle
+--------------
+
+gg -  Anfang der Datei
+G - Ende der Datei
+{motion}gg oder {motion}G - Springe zu Zeile
+
+H - Sichtbarer Bereich oben
+M - Sichtbarer Bereich mitte
+L - Sichtbarer Bereich unten
+
+ctrl-d -halben Bildschirm nach unten scrollen
+ctrl-u - halben Bildschirm nach oben scrollen
+(Die Anzahl der Zeilen kann mittels 'scroll' option beeinflusst werden)
+
+ctrl-f - ganze Bildschirmseite nach unten scrollen
+ctrl-b - ganze Bildschirmseite nach oben scrollen
+
+0 - Anfang der Zeile (inkl. Whitespace)
+^ - Anfang der Zeile - erster Non Whitespace-Character
+$ - Ende der Zeile
+
+( - [Anzahl] Sätze rückwärts
+) - [Anzahl] Sätze vorwärts
+{ - [Anzahl] Absätze vrückwärts
+} - [Anzahl] Absätze vorwärts
+
+w - [Anzahl] Worte vorwärts zum Anfang.
+W - [Anzahl] (WORTgrenzen) vorwärts zum Anfang, wie dieses Beispiel zeigt
+b - [Anzahl] Worte rückwärts zum Anfang
+B - [Anzahl] WORTE rückwärts zum Anfang, wie dieses Beispiel zeigt.
+e - [Anzahl] worte vorwärts zum Ende des Wortes
+E - [Anzahl] WORTE vorwärts zum Ende des Wortes. Wie dieses Beispiel zeigt.
+
+ge - [Anzahl] Worte rückwärts zum Ende eines Wortes
+gE - [Anzahl] WORTE rückwärts zum Ende eines Wortes
+
+gj - [Anzahl] Bildschirmzeile runter
+gk - [Anzahl] Bildschirmzeile hoch
+g0 - Zum Anfang der Bildschirmzeile
+g$ - Zum Ende der Bildschirmzeile
+gm - zur Mitte der Zeile, oder so weit wie möglich#
+
+
+rmal mode Command:
+* - Finde Wort unter Cursor
+  n - zum nächsten Treffer springen
+  N - zum vorherigen Treffer springen
+
+Command-line mode, so genannte 'pattern search commands':
+/ - vorwärts im Dokument suchen
+? - rückwärts im Dokument suchen
+
+f - [Anzahl] Zeichen vorwärts finden.
+F - [Anzahl] Zeichen rückwärts finden.
+t - [Anzahl] bis vor das Zeichen vorwärts finden
+T - [Anzahl] bis vor das Zeichen rückwärts finden
+
+; - vorherigen f,F,t,T wiederholen
+, - vorherigen f,F,t,T in andere Richtung wiederholen.
+(ein Bisschen wie n, N bei der Suche oder bei *)
+
+Ex-Befehle
+----------
+
+:set number (Zeilennummern anzeigen)
+:set nonumber (Zeilennummern nicht mehr anzeigen)
+:set relativenumber (relative Zeilennummern anzeigen)
+:set norelativenumber(keine relativen Zeilennummern mehr anzeigen)
+
+
